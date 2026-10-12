@@ -206,13 +206,13 @@ The `virt-stack` gains performance resilience, architecture agility, and hardeni
 
 #### cloud-init v. 26.2
 
-Cloud-init features introduced beyond v. 26.1 in Resolute:
+Cloud-init features introduced beyond v. 26.1 in Ubuntu 26.04 LTS (Resolute Raccoon):
 
-* mounts: escape special characters in fstab mount paths
+* mounts: escape special characters in `fstab` mount paths
 * net: add `route-metric` support in NetworkManager renderer
-* azure: allow disable network set-name, report missing customdata, experimental skip_ready_report
-* cloudstack: get vr information from network manager leases
-* opennebula: support network config for global `SEARCH_DOMAIN` and `ETHx_ROUTES` static routes
+* azure: allow disable network `set-name`, report missing customdata, experimental `skip_ready_report`
+* cloudstack: get `vr` information from network manager leases
+* opennebula: support network configuration for global `SEARCH_DOMAIN` and `ETHx_ROUTES` static routes
 * oracle: detect iSCSI root via iBFT for dracut images
 * security: harden Jinja template rendering with sandboxing
 
