@@ -726,6 +726,11 @@ These issues apply only to systems using the affected camera drivers. See [LP: #
 
 The Showtime video player might not display subtitles, and video playback might stall when you change subtitle playback. The issue is being addressed in the GStreamer base plugins. See [LP: #2119649](https://bugs.launchpad.net/bugs/2119649).
 
+#### RISC-V missing the App Center
+
+The App Center is currently not installed by default on the Ubuntu 26.10 RISC-V desktop image.
+Users should be able to install it if needed: `sudo snap install snap-store`.
+
 ### Server issues
 
 #### OpenSSH package purge can break openssh
@@ -756,6 +761,18 @@ This is being tracked in bug [LP: #2169738](https://bugs.launchpad.net/ubuntu/+s
 ### Security issues
 
 ### Hardware support issues
+
+#### SpacemiT K3
+
+While initial support for the SpacemiT K3 platform landed in 26.10, some specific hardware support is missing:
+* The second PCIe slot on K3 platforms, like the M.2 B Key on the Pico-ITX, will not work
+* DisplayPort and HDMI audio are not supported
+* GPU, VPU and G2D hardware nodes, for 3D graphics, video decode and 2D graphics acceleration are not supported
+* Power balance elements (managing CPU frequency, thermals, power domains) are not supported
+
+Installing an image on the K3 can be slow, please be patient and retry if you encounter an unexplained error with the installer.
+
+Any issue can be reported as a bug on Launchpad targeting the affected packages.
 
 ### System issues
 
