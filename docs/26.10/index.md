@@ -96,6 +96,10 @@ Computers without a hardware root of trust can now be installed with TPM-backed 
 
 This was already backported in Ubuntu Desktop 26.04.1. For reference, see [Hardware-backed disk encryption requirements](https://ubuntu.com/desktop/docs/en/latest/reference/hardware-backed-disk-encryption-requirements/).
 
+#### Upgrade support on the horizon for systems running under TPM-backed FDE
+
+While systems running under TPM-backed FDE will not be able to upgrade from Ubuntu 26.04 LTS to Ubuntu 26.10 on release, we anticipate enabling these upgrades during the Ubuntu 26.10 lifecycle.
+
 #### System-level opt-out for Ubuntu Insights
 
 Administrators can now opt out of anonymous Ubuntu Insights system report collection for the entire system. Enabling the configuration overrides individual opt-ins such that they are instead interpreted as opt-outs. Users with sufficient permissions can change this setting, either in the Settings application or by using Ubuntu Insights' command-line interface.
