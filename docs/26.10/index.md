@@ -556,7 +556,7 @@ See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [
 
 ### Cloud changes
 
-* pollinate dropped from ubuntu-server-minimal seed and therefore from Stonking cloud images.
+* pollinate dropped from server-cloud-minimal seed and therefore from Stonking cloud images.
 * GKE 1.28, 1.29, and 1.30 support dropped as EOL; newer GKE version support added.
 * Anthos vSphere/VMWare 1.35 and 1.36 support added.
 
@@ -587,8 +587,7 @@ See [Postfix Non-Berkeley-DB migration](https://www.postfix.org/NON_BERKELEYDB_R
 
 ### Cloud deprecations
 
-* pollinate dropped from ubuntu-server-minimal seed.
-  * xxd and curl explicitly re-seeded, as they were former dependencies of pollinate ([LP: #2164946](https://bugs.launchpad.net/bugs/2164946)).
+* pollinate dropped from server-cloud-minimal seed ([LP: #2158262](https://bugs.launchpad.net/ubuntu/+source/ubuntu-meta/+bug/2158262)).
 
 ### Security deprecations
 
@@ -765,8 +764,6 @@ If, however, while in this state, the removed package is **purged**, that will b
 This is being tracked in bug [LP: #2169738](https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/2169738). For the Stonking release, only [openssh-gssapi](https://launchpad.net/ubuntu/+source/openssh-gssapi) was fixed, while [openssh](https://launchpad.net/ubuntu/+source/openssh) will be available as an SRU. Once that update lands, the purge action will work correctly and no longer break the existing configuration that is needed by the counterpart package.
 
 ### Development issues
-
-### Cloud issues
 
 ### Security issues
 
