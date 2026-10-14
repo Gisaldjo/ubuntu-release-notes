@@ -785,6 +785,7 @@ Find the release notes for the official flavors at the following links:
 * [Ubuntu Cinnamon Release Notes](https://ubuntucinnamon.org/ubuntu-cinnamon-26-10-stonking-stingray-release-notes/)
 * [Ubuntu Kylin Release Notes](https://www.ubuntukylin.com/news/ubuntukylin2610-en.html)
 * [Ubuntu Unity Release Notes](https://ubuntuunity.org/posts/ubuntu-unity-2610-release-notes/)
+* [Ubuntu MATE Release Notes](https://ubuntu-mate.org/blog/ubuntu-mate-stonking-stingray-release-notes/)
 * [Xubuntu Release Notes](https://xubuntu.org/releasedocs/26.10/release-notes/)
 
 ## More information
