@@ -105,6 +105,10 @@ While systems running under TPM-backed FDE will not be able to upgrade from Ubun
 
 Administrators can now opt out of anonymous Ubuntu Insights system report collection for the entire system. Enabling the configuration overrides individual opt-ins such that they are instead interpreted as opt-outs. Users with sufficient permissions can change this setting, either in the Settings application or by using Ubuntu Insights' command-line interface.
 
+#### New window tiling interface
+
+Ubuntu Desktop now shows a new popup when dragging a window to offer tiling layout options. ([ubuntu/Tiling-Assistant#451](https://github.com/ubuntu/Tiling-Assistant/issues/451))
+
 ### Server features
 
 #### FreeRADIUS 3.2.10
