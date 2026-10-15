@@ -109,6 +109,16 @@ Administrators can now opt out of anonymous Ubuntu Insights system report collec
 
 Ubuntu Desktop now shows a new popup when dragging a window to offer tiling layout options. ([ubuntu/Tiling-Assistant#451](https://github.com/ubuntu/Tiling-Assistant/issues/451))
 
+#### D-Bus is now provided by `dbus-broker`
+
+D-Bus is a message bus that lets processes communicate on a Linux system. The default D-Bus implementation has changed from `dbus-daemon` to `dbus-broker`.
+
+Both the system bus and the per-user session bus are now provided by `dbus-broker`.
+
+Thanks to its asynchronous, event-driven architecture, `dbus-broker` offers better accounting, reliability and scalability than `dbus-daemon`.
+
+For details, refer to [Ubuntu 26.10 is switching to dbus-broker](https://discourse.ubuntu.com/t/ubuntu-26-10-is-switching-to-dbus-broker/84060).
+
 ### Server features
 
 #### FreeRADIUS 3.2.10
