@@ -853,3 +853,5 @@ Find the release notes for the official flavors at the following links:
 * [Xubuntu Release Notes](https://xubuntu.org/releasedocs/26.10/release-notes/)
 
 ## More information
+
+Refer to {ref}`release-policy-and-schedule` and {ref}`project-and-community`.
