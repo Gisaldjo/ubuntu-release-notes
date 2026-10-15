@@ -333,9 +333,18 @@ connections.
   - New `--ike` filter option for `swanctl --list-conns`.
   - Enabled mixed-family IPComp configs on Linux 6.3+.
 
-#### Subiquity
+#### Subiquity 26.10
 
-Please see the [26.10 Release Notes](https://github.com/canonical/subiquity/releases/tag/26.10) post on GitHub.
+The Subiquity Ubuntu installer has been updated to version 26.10. New features include the following:
+
+- New `/boot` storage requirements in preparation for signed GRUB
+- Experimental TPM/FDE use-gap support (development feature)
+- New `accepted-errors` autoinstall directive for TPM/FDE installations
+- Support for the `no-hardware-root-of-trust` `snapd` error kind
+- Btrfs resize support
+- Multi-layout keyboard configurations now documented
+
+For details, bug fixes, and known issues, refer to the [26.10 release notes](https://github.com/canonical/subiquity/releases/tag/26.10) post on GitHub.
 
 ### Development features
 
