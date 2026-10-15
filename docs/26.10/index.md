@@ -386,6 +386,11 @@ connections.
 
 ### Cloud features
 
+* EC2 images built with Imagecraft are available as preview images.
+* GCE minimal images no longer have recommends installed, making them even smaller.
+* OKE (Oracle Kubernetes Engine) 1.36 support added.
+* AppArmor feature support added for 7.2 and 7.3 kernels ([LP: #2167455](https://bugs.launchpad.net/ubuntu/+source/livecd-rootfs/+bug/2167455) and [LP: #2168878](https://bugs.launchpad.net/ubuntu/+source/livecd-rootfs/+bug/2168878)).
+
 ### Security features
 
 #### An oxidized OpenPGP
@@ -555,6 +560,10 @@ See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [
 
 ### Cloud changes
 
+* pollinate dropped from server-cloud-minimal seed and therefore from Stonking cloud images.
+* GKE 1.28, 1.29, and 1.30 support dropped as EOL; newer GKE version support added.
+* Anthos vSphere/VMWare 1.35 and 1.36 support added.
+
 ### OpenStack
 
 ### Platforms
@@ -581,6 +590,9 @@ See [Postfix Non-Berkeley-DB migration](https://www.postfix.org/NON_BERKELEYDB_R
 ### Development deprecations
 
 ### Cloud deprecations
+
+* pollinate dropped from server-cloud-minimal seed ([LP: #2158262](https://bugs.launchpad.net/ubuntu/+source/ubuntu-meta/+bug/2158262)).
+  * xxd dropped from minimal images as it was a dependency of pollinate
 
 ### Security deprecations
 
@@ -671,6 +683,9 @@ On the packaging side, squid now builds against OpenSSL 4.
 
 ### Cloud fixes
 
+* Grub config regeneration fixed for AWS EC2 images for both amd64 and arm64.
+* Excluded GPU/RDMA NICs from networkd-wait-online in accelerator images.
+
 ### Security fixes
 
 ### Hardware support fixes
@@ -759,8 +774,6 @@ If, however, while in this state, the removed package is **purged**, that will b
 This is being tracked in bug [LP: #2169738](https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/2169738). For the Stonking release, only [openssh-gssapi](https://launchpad.net/ubuntu/+source/openssh-gssapi) was fixed, while [openssh](https://launchpad.net/ubuntu/+source/openssh) will be available as an SRU. Once that update lands, the purge action will work correctly and no longer break the existing configuration that is needed by the counterpart package.
 
 ### Development issues
-
-### Cloud issues
 
 ### Security issues
 
