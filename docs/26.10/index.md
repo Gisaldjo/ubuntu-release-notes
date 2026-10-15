@@ -488,6 +488,20 @@ The `systemd` service manager has been updated to version 261. For a complete li
 
 See also {ref}`support-for-legacy-system-v-scripts-removed`.
 
+#### cloud-init v. 26.2
+
+Cloud-init features introduced beyond v. 26.1 in Ubuntu 26.04 LTS (Resolute Raccoon):
+
+* mounts: escape special characters in `fstab` mount paths
+* net: add `route-metric` support in NetworkManager renderer
+* azure: allow disable network `set-name`, report missing customdata, experimental `skip_ready_report`
+* cloudstack: get `vr` information from network manager leases
+* opennebula: support network configuration for global `SEARCH_DOMAIN` and `ETHx_ROUTES` static routes
+* oracle: detect iSCSI root via iBFT for dracut images
+* security: harden Jinja template rendering with sandboxing
+
+See [cloud-init’s release notes for more details](https://github.com/canonical/cloud-init/releases).
+
 #### 100% Rust `coreutils`
 
 The default core utilities now run entirely on the Rust-based `uutils`
