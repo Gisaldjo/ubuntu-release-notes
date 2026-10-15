@@ -27,6 +27,7 @@ Release notes contain specific upgrade instructions for that particular release.
 :maxdepth: 2
 :caption: Currently in development
 
+27.04 (Tenacious T-Rex) <27.04/index>
 :::
 
 :::{toctree}

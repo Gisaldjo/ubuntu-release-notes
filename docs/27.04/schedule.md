@@ -1,5 +1,5 @@
-(t-t-schedule)=
-# Ubuntu T T Release Schedule
+(tenacious-t-rex-schedule)=
+# Ubuntu Tenacious T-Rex Release Schedule
 
 <!-- migrated from https://discourse.ubuntu.com/t/t-t-release-schedule/75625 -->
 
@@ -82,7 +82,7 @@ If you’re planning a change that might have a disruptive effect on the archive
 | 26 | April 15 |  |
 | 27 | April 22 |  |
 
-## Ubuntu T T Release Task Signup Sheet
+## Ubuntu Tenacious T-Rex Release Task Signup Sheet
 
 This signup sheet is to be used for planning release milestone tasks.
 
