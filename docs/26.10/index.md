@@ -24,6 +24,7 @@ Release schedule <schedule>
 
 ## Upgrades
 
+To upgrade from a previous Ubuntu release, refer to the [Ubuntu Desktop](https://ubuntu.com/desktop/docs/en/latest/how-to/upgrade-ubuntu-desktop/) or [Ubuntu Server](https://ubuntu.com/server/docs/how-to/software/upgrade-your-release/) guide.
 
 ## New features and improvements
 
