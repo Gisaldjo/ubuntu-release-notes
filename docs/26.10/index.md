@@ -717,9 +717,9 @@ The details for each release are available in the [upstream release notes](https
 
 On the packaging side, squid now builds against OpenSSL 4.
 
-#### sssd 0.12.0
+#### sssd 2.12.0
 
-[sssd](https://launchpad.net/ubuntu/+source/sssd) received some fixes in version 0.12.0:
+[sssd](https://launchpad.net/ubuntu/+source/sssd) received some fixes in version 2.12.0:
 
 * Two security issues were fixed: a denial of service in the PAM responder caused by missing validation of the authentication token length, and a use-after-free crash in `sssd_pam` while processing `p11_child` results with slow smartcards (see [LP: #2162577](https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/2162577)).
 * SSSD was made compatible with OpenSSL 4 and with GDM 51.
