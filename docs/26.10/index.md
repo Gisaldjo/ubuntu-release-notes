@@ -510,6 +510,9 @@ retained due to compatibility issues, have now been migrated.
 
 To switch between the Rust and GNU implementations of coreutils, refer to {ref}`resolute-rust-coreutils`.
 
+### WSL features
+
+The Ubuntu Pro for WSL app is now published for both AMD64 and ARM64.
 
 ## Backwards-incompatible changes
 
@@ -706,6 +709,19 @@ On the packaging side, squid now builds against OpenSSL 4.
 
 ### System fixes
 
+### WSL fixes
+
+#### Ubuntu Pro for WSL
+
+[CVE-2026-102371](https://ubuntu.com/security/CVE-2026-102371) was disclosed
+and fixed in `wsl-pro-service`. Previous versions of that service attach the
+instance to Ubuntu Pro by executing the pro client with the Ubuntu Pro token
+passed as a command-line argument (`pro attach <token>`). On systems where
+`/proc` is mounted without process-hiding mitigations (such as `hidepid`),
+which is the default in WSL, an unprivileged local user or process in the same
+WSL instance can read the token from `/proc/<pid>/cmdline` while the attach
+process is running. That's fixed in all LTS versions of Ubuntu on WSL and in
+Stonking Stingray as well.
 
 ## Known issues
 
