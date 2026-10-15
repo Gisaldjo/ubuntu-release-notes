@@ -779,6 +779,22 @@ This is being tracked in bug [LP: #2169738](https://bugs.launchpad.net/ubuntu/+s
 
 ### Hardware support issues
 
+#### Raspberry Pi
+
+* On the CM5 particularly, but potentially on other Pi 5 models, there appears to be a significantly larger power draw at boot time. If you experience issues during boot, and are *not* using an official (5A capable) power supply, please try using one before debugging further.
+
+* The new `gnome-initial-setup` has issues preventing it from working properly:
+  - Time zone input dropdown can "wobble" ([LP: #2084611](https://launchpad.net/bugs/2084611)).
+
+* During boot on the server image, if your `cloud-init` configuration (in `user-data` on the boot partition) relies upon networking (importing SSH keys, installing packages, etc.) you *must* ensure that at least one network interface is required (`optional: false`) in `network-config` on the boot partition.
+  - This is due to Netplan changes to the `wait-online` service ([LP: #2060311](https://launchpad.net/bugs/2060311)).
+  - A current issue may still cause `cloud-init` to run before the network is ready ([LP: #2144891](https://launchpad.net/bugs/2144891)).
+  - Another issue prevents the wifi wlan0 adapter from activating on first boot ([LP: #2170885](https://launchpad.net/bugs/2170885)); once booted, `sudo netplan apply` can be used to bring the network up but if you are relying on a cloud-init configuration requiring networking, this will fail.
+
+* With the removal of the `crda` package in 22.04, the method of setting the WiFi regulatory domain (editing `/etc/default/crda`) no longer operates. On server images, use the `regulatory-domain` option in the Netplan configuration. On desktop images, append `cfg80211.ieee80211_regdom=GB` (substituting `GB` for the relevant country code) to the kernel command line in the `cmdline.txt` file on the boot partition  ([LP: #1951586](https://launchpad.net/bugs/1951586)).
+
+* On server images, re-authentication to WiFi APs when regulatory domain is set result in `dmesg` spam to the console ([LP: #2063365](https://launchpad.net/bugs/2063365)).
+
 #### SpacemiT K3
 
 While initial support for the SpacemiT K3 platform landed in 26.10, some specific hardware support is missing:
