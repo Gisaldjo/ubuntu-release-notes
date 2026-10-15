@@ -73,7 +73,7 @@ Contribute to release notes <contribute>
 
 ## Interim releases
 
-None at the moment.
+* {ref}`ubuntu-26.10-release-notes`
 
 (release-policy-and-schedule)=
 ## Release policy and schedule
