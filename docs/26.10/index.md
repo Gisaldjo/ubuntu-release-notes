@@ -333,6 +333,10 @@ connections.
   - New `--ike` filter option for `swanctl --list-conns`.
   - Enabled mixed-family IPComp configs on Linux 6.3+.
 
+#### Subiquity
+
+Please see the [26.10 Release Notes](https://github.com/canonical/subiquity/releases/tag/26.10) post on GitHub.
+
 ### Development features
 
 #### Toolchain upgrades
