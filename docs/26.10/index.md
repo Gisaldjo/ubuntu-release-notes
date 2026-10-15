@@ -601,7 +601,7 @@ See [LP: #2155023](https://bugs.launchpad.net/ubuntu/+source/libp11/+bug/2155023
 
 See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [HAProxy 3.4](https://www.haproxy.com/blog/announcing-haproxy-3-4) announcements for the complete list of changes.
 
-### Development changes
+<!-- ### Development changes -->
 
 ### Cloud changes
 
@@ -609,9 +609,9 @@ See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [
 * GKE 1.28, 1.29, and 1.30 support dropped as EOL; newer GKE version support added.
 * Anthos vSphere/VMWare 1.35 and 1.36 support added.
 
-### OpenStack
+<!-- ### OpenStack -->
 
-### Platforms
+<!-- ### Platforms -->
 
 ### System changes
 
@@ -632,18 +632,18 @@ BerkeleyDB support has been deprecated in Postfix. This affects the `hash:` and 
 
 See [Postfix Non-Berkeley-DB migration](https://www.postfix.org/NON_BERKELEYDB_README.html) for more information.
 
-### Development deprecations
+<!-- ### Development deprecations -->
 
 ### Cloud deprecations
 
 * pollinate dropped from server-cloud-minimal seed ([LP: #2158262](https://bugs.launchpad.net/ubuntu/+source/ubuntu-meta/+bug/2158262)).
   * xxd dropped from minimal images as it was a dependency of pollinate
 
-### Security deprecations
+<!-- ### Security deprecations -->
 
-### Hardware support deprecations
+<!-- ### Hardware support deprecations -->
 
-### System deprecations
+<!-- ### System deprecations -->
 
 
 ## Bug fixes
@@ -724,18 +724,18 @@ On the packaging side, squid now builds against OpenSSL 4.
 * Two security issues were fixed: a denial of service in the PAM responder caused by missing validation of the authentication token length, and a use-after-free crash in `sssd_pam` while processing `p11_child` results with slow smartcards (see [LP: #2162577](https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/2162577)).
 * SSSD was made compatible with OpenSSL 4 and with GDM 51.
 
-### Development fixes
+<!-- ### Development fixes -->
 
 ### Cloud fixes
 
 * Grub config regeneration fixed for AWS EC2 images for both amd64 and arm64.
 * Excluded GPU/RDMA NICs from networkd-wait-online in accelerator images.
 
-### Security fixes
+<!-- ### Security fixes -->
 
-### Hardware support fixes
+<!-- ### Hardware support fixes -->
 
-### System fixes
+<!-- ### System fixes -->
 
 ### WSL fixes
 
@@ -831,9 +831,9 @@ If, however, while in this state, the removed package is **purged**, that will b
 
 This is being tracked in bug [LP: #2169738](https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/2169738). For the Stonking release, only [openssh-gssapi](https://launchpad.net/ubuntu/+source/openssh-gssapi) was fixed, while [openssh](https://launchpad.net/ubuntu/+source/openssh) will be available as an SRU. Once that update lands, the purge action will work correctly and no longer break the existing configuration that is needed by the counterpart package.
 
-### Development issues
+<!-- ### Development issues -->
 
-### Security issues
+<!-- ### Security issues -->
 
 ### Hardware support issues
 
@@ -865,7 +865,7 @@ Installing an image on the K3 can be slow, please be patient and retry if you en
 
 Any issue can be reported as a bug on Launchpad targeting the affected packages.
 
-### System issues
+<!-- ### System issues -->
 
 
 ## Official flavors
