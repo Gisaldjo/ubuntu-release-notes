@@ -19,6 +19,7 @@ Release notes contain specific upgrade instructions for that particular release.
 :maxdepth: 2
 :caption: Supported interim releases
 
+26.10 (Stonking Stingray) <26.10/index>
 :::
 
 :::{toctree}
@@ -26,7 +27,6 @@ Release notes contain specific upgrade instructions for that particular release.
 :maxdepth: 2
 :caption: Currently in development
 
-26.10 (Stonking Stingray) <26.10/index>
 :::
 
 :::{toctree}

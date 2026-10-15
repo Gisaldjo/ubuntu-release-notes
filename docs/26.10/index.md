@@ -7,10 +7,6 @@ tocdepth: 3
 
 These release notes cover new features and changes in Ubuntu 26.10 (Stonking Stingray).
 
-:::{important}
-Ubuntu 26.10 (Stonking Stingray) is currently in development, scheduled to be released in October 2026.
-:::
-
 For the release schedule of Ubuntu 26.10, refer to the {ref}`release schedule <stonking-stingray-schedule>`.
 
 :::{toctree}
@@ -21,6 +17,10 @@ Release schedule <schedule>
 :::
 
 ## Support lifespan
+
+Ubuntu 26.10 was released on 15 October 2026. It will be supported for 9 months, until July 2027.
+
+For details, see [Ubuntu release cycle](https://ubuntu.com/about/release-cycle).
 
 ## Upgrades
 
